@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Bar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to the Smoothie Bar</h1>
+            <p>Customize your smoothie with fresh ingredients</p>
+        </header>
+
+        <section class="order-form">
+            <form id="smoothieForm">
+                <div class="form-section">
+                    <h2>Create Your Smoothie</h2>
+
+                    <label for="base">Choose your base:</label>
+                    <select id="base" name="base" class="form-control">
+                        <option value="milk">Milk</option>
+                        <option value="almond_milk">Almond Milk</option>
+                        <option value="soy_milk">Soy Milk</option>
+                        <option value="coconut_water">Coconut Water</option>
+                    </select>
+
+                    <fieldset>
+                        <legend>Select your fruits:</legend>
+                        <label><input type="checkbox" name="fruits" value="banana"> Banana</label>
+                        <label><input type="checkbox" name="fruits" value="strawberry"> Strawberry</label>
+                        <label><input type="checkbox" name="fruits" value="blueberry"> Blueberry</label>
+                        <label><input type="checkbox" name="fruits" value="mango"> Mango</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Add-ons:</legend>
+                        <label><input type="checkbox" name="addons" value="chia_seeds"> Chia Seeds</label>
+                        <label><input type="checkbox" name="addons" value="protein_powder"> Protein Powder</label>
+                        <label><input type="checkbox" name="addons" value="honey"> Honey</label>
+                    </fieldset>
+
+                    <button type="submit" class="order-button">Order Smoothie</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="order-summary">
+            <h2>Your Smoothie</h2>
+            <div id="smoothieDescription">
+               
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Smoothie Bar</p>
+        </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
